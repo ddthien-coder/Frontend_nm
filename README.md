@@ -1,10 +1,11 @@
-# Quasar App (project4)
+# Project Dev (Project)
 
-A Quasar Framework app
+Vuejs Framework
+
 
 ## Install the dependencies
 ```bash
-yarn
+yarn install
 ```
 
 ### Start the app in development mode (hot-code reloading, error reporting, etc.)
@@ -19,4 +20,6 @@ quasar build
 ```
 
 ### Customize the configuration
-See [Configuring quasar.conf.js](https://quasar.dev/quasar-cli/quasar-conf-js).
+```bash
+Github
+```
