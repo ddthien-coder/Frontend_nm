@@ -15,8 +15,9 @@ let errorFunction = error => {
 }
 
 const service  = axios.create({
-     baseURL: process.env.API, // api的base_url
-     timeout: 20000, // request timeout
+     //baseURL: process.env.API, // api的base_url
+      baseURL: 'https://5f3c8c4e6c11f80016d6f17b.mockapi.io',
+      timeout: 20000, // request timeout
     //  headers : { 
     //    'Authorization': 'Bearer ' + LocalStorage.getItem('LocalAccessToken') 
     //  }

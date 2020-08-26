@@ -11,7 +11,7 @@
         arrows
         transition-prev="slide-right"
         transition-next="slide-left"
-        height="300px"
+        height="350px"
       >
         <q-carousel-slide
           :name="1"
@@ -27,7 +27,7 @@
           img-src="https://huunguyen.vn/wp-content/uploads/2019/06/banner-2.jpg"
         >
           <div class="absolute-top custom-caption">
-            <div class="text-h2">Second stop</div>
+            <div class="text-h2">Second stop22</div>
             <div class="text-subtitle1">Famous City</div>
           </div>
         </q-carousel-slide>

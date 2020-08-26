@@ -42,15 +42,7 @@ module.exports = function (ctx) {
 
     // Full list of options: https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-build
     build: {
-      env: ctx.dev
-      ? { //on dev
-        API: JSON.stringify('http://localhost:8080'),
-        APP_NAME: JSON.stringify(require('./package.json').productName)
-      }
-      : { //on build (production)
-        API: JSON.stringify('https://dev02.lineus.vn'),
-        APP_NAME: JSON.stringify(require('./package.json').productName)
-      },
+      
       vueRouterMode: 'history', // available values: 'hash', 'history'
       distDir: 'target/dist',
       // rtl: false, // https://quasar.dev/options/rtl-support

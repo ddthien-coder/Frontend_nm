@@ -1,6 +1,6 @@
 <template>
   <q-layout>
-    <q-header class="header-menu">
+    <q-header v-if="Object.entries(inforcty).length > 0" class="header-menu">
       <div class="header-contact" style="background: white;width: 100%;">
         <!-- row logoname cty -->
         <div class="row">
@@ -8,7 +8,8 @@
             <ul class="logo" style="padding-left: 15px;">
               <li>
                 <div class="image" style="padding: 5px;">
-                  <img :src="informationcty.image" height="60px" width="70px" />
+                  <!-- <img :src="baseUrl + '/api/v1/home/view' + informationcty.img.fileType.split('/').pop().toUpperCase() + '/' + informationcty.img.id" height="60px" width="70px" /> -->
+                  <img :src="informationcty.img" height="60px" width="70px" />
                 </div>
               </li>
               <li>
@@ -237,13 +238,6 @@ export default {
   data() {
     return {
       informationcty: {
-        title: "Công Ty TNHH Chuyển Phát Nhanh",
-        name: "NGUYỄN MINH",
-        image: "https://pano.vn/wp-content/uploads/2015/09/mixed-logo.jpg",
-        email: "longdk251@gmail.com",
-        phone: "0394493993",
-        diaChi: "89 Trần Văn Dư , phường 13, quận Tân Bình , TPHCM",
-        description: "Với dịch vụ chuyển nhà trọn gói Nguyễn Minh Khi có suy nghĩ chuyển nhà bạn không cần bận tâm . chúng tôi sẽ giúp bạn giải quyết vấn đề đó, mọi vấn đề mà bạn đang bận tâm. Sẽ được nhân viên chúng tôi tư vấn đề ra ngày tốt và ngày xấu khi chuyển nhà. cách bố trí đồ đạc hợp lý và hợp phong thủy cho bạn."
       },
       menu: [
         {
@@ -282,7 +276,8 @@ export default {
           submenu: []
         },
       ],
-      menus:[]
+      inforcty:[],
+      baseUrl: 'https://5f3c8c4e6c11f80016d6f17b.mockapi.io'
     };
   },
   computed: {},
@@ -299,8 +294,10 @@ export default {
   },
   created() {
     loadAllInformation().then(response => {
-      this.menus = response.data;
-      console.log("api information==>", this.menus)
+       this.inforcty = response.data;
+       console.log("inforcty",this.inforcty)
+       this.informationcty = this.inforcty[0];
+        console.log("inforcty==>",this.informationcty)
     });
   }
 };
