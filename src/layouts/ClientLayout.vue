@@ -9,7 +9,8 @@
               <li>
                 <div class="image" style="padding: 5px;">
                   <!-- <img :src="baseUrl + '/api/v1/home/view' + informationcty.img.fileType.split('/').pop().toUpperCase() + '/' + informationcty.img.id" height="60px" width="70px" /> -->
-                  <img :src="informationcty.img" height="60px" width="70px" />
+                  <!-- <img :src="informationcty.img" height="60px" width="70px" /> -->
+                  <img src="../assets/transport60x60.png"/>
                 </div>
               </li>
               <li>
@@ -146,7 +147,7 @@
           <div class="footer-widget">
             <div class="logo">
               <a href="#"
-                ><img src="https://i.ibb.co/wBkDzLb/ak-logo-red-blue.png" alt=""
+                ><img src="../assets/transport.png" alt=""
               /></a>
             </div>
             <div class="text">
