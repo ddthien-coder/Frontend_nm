@@ -49,6 +49,7 @@
             <div class="text-subtitle1">Famous Bridge 2</div>
           </div>
         </q-carousel-slide>
+        
       </q-carousel>
     </div>
     <div class="contener">
@@ -405,6 +406,19 @@
                 </p>
               </div>
             </div>
+             <div>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRFoRobInS573CZeTa0vdoAgb2_Mx84aEFRhQ&usqp=CAU"
+                width="300px"
+                height="200px"
+              />
+              <div class="text">
+                <h5>Nội dung caption của slide thứ 6!</h5>
+                <p>
+                  <b>Noi dung title [...]</b>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -529,7 +543,7 @@ export default {
     $(document).ready(function() {
       $(".carousel").slick({
         infinite: true,
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1,
         dots: true,
         autoplay: true,
@@ -541,7 +555,7 @@ export default {
               arrows: false,
               centerMode: true,
               centerPadding: "40px",
-              slidesToShow: 3
+              slidesToShow: 4
             }
           },
           {
